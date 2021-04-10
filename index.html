@@ -1,0 +1,127 @@
+<!DOCTYPE html>  <!-- doctype tells the brower which html version we are using and that it is a html file -->
+<html lang="en" dir="ltr">  <!-- This tells that the code within this open and close is a html code -->
+  <!-- head holds info about the web page and tells the browser how it should handle the page-->
+  <head>
+    <meta charset="utf-8">  <!-- meta elements give extra associated data to the web page. charset gives the character set used in the web page. utf="8" is used as it contains all characters from all lang. This includes emojiss tooooo-->
+    <meta name="description" content="This gives personal info about Animesh Pande" > <!-- Basically this is what is shown below the link in the description when we google search a site -->
+    <meta name="keywords" content="Web Devloper, HTML, CSS" /> <!-- It is basically the keywords that will give our webpage when searched -->
+    <title>Animesh's Personal Site</title>  <!-- Gives title to the web page. basically tab title is this -->
+  </head>
+  <!-- Anything that is inside the web age is here -->
+  <body>
+    <table cellspacing = "20" >  <!-- A table can be used to make the data look better by indententing photo to one side and info to the other -->  <!-- Cell spacing increases the space between two columns -->
+      <tr>
+        <td>
+          <img src="D:\Padhai\Web developement\HTML personal site\circle-cropped.png" alt="Animesh's Profile photo">  <!-- We can paste the image from comp in the web developement folder or write  proper path -->
+        </td>
+        <td>
+          <h1>Animesh Pande</h1>
+          <!-- <em> This helps to ilalizise text and makes it emphasized by the web page</em> -->
+          <!-- <<strong>This makes it bold and emphasized</strong> -->
+          <p><em>Student at <strong><a href="http://dtu.ac.in/">Delhi Technological University</a></strong></em></p>    <!-- It is a paragraph tag and adds the text inside it into a paragraph -->
+          <!-- <a href="#"></a> This is a(anchor tag) html tag that helps create hyperlink --> <!-- a is the html element and href is the dest when clicked and before the closing anchor tag we write the part that will take to the link -->
+          <p><em>I am fluent in Python, C++ and Java. Been learning Web Developement and ML.</em></p>
+       </td>
+      </tr>
+    </table>
+    <!-- <img src="" alt=""> this tag helps in adding photos in the web page. src is the source path of the image. alt gives the text that will be displayed if it is unable to get the photo. alt also helps in google search  -->
+    <!-- <img src="https://pbs.twimg.com/profile_images/1167875037677776897/cxO7KPH6.jpg" alt="Animesh's Profile photo">    It pings the servers of twitter for the image. If servers are gone then it will give that x in the image -->
+    <!-- <img src="" alt=""> attributes can be googled and see it -->
+
+    <hr>
+    <h2>Education</h2>
+    <!-- <ul>
+      <li>This stands for unordered list ie without numbering or alphabets or anything</li> First bullet point. Each <li></li> gives one bullet point
+    </ul> -->
+    <ul>
+      <li>Scholling at <strong><a href="http://www.brightlandschool.co.in/">Brightlands School</a></strong></li>
+      <li>Doing COE degree from DTU</li>
+    </ul>
+    <hr>
+    <!-- We can also make another page hobbies.html and use hyperlink to make a link -->
+    <h2><a href="hobbies.html">My Hobbies</a></h2>
+    <!-- <h2>My Hobbies</h2> -->
+    <!-- <ol>
+      Gives us ordered list. We can nest it within an ul or and ol
+    </ol> -->
+    <!-- <ol>  type can be changed using "type" attribute which can change it from numbers to alphabets to roman numerals-->
+      <!-- <li>Programming</li> -->
+      <!-- <li>Gaming</li> -->
+      <!-- <li>Football</li> -->
+    <!-- </ol> -->
+
+    <hr>
+
+    <!-- WE can create tables to make the data arrnged beautifully -->
+    <h2>Grades</h2>
+    <table cellspacing = "5">
+      <!-- WE make diff header body and footer so that we can customize each of them seperately if the need be -->
+
+      <thead>
+        <!-- Header of the table ie the heading of each column  -->
+        <tr>
+          <th>Year</th>        <!-- th is the table head and is automatically bold as it is the heding-->
+          <th>Class</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Body of the table -->
+        <!-- CSS should be used to make it more beautiful but we can use border here, which is table atribute but should not be used as it is old and ugly -->
+        <tr> <!-- 2nd row -->
+          <td>2016-17</td>
+          <td>10th</td>
+          <td>98.2</td>
+        </tr>
+        <tr>  <!-- tr is basically table row --> <!-- Inside this for this row column will be defined and dthe data will be indented according to it -->
+            <td>2018-19</td>   <!-- 1st column in the first row -->
+            <td>12th</td>   <!-- 2nd column in the first row -->
+            <td>97.25</td>
+        </tr>
+
+      </tbody>
+
+      <tfoot>
+        <!-- footer of the table. optional but body and header should be made -->
+      </tfoot>
+    </table>
+    <hr>
+    <h2>Skills</h2>
+    <table cellspacing = "5">
+      <tr>
+        <td>
+          <table cellspacing = "5">    <!-- table inside a table so that each column of the first row is another table with 2 rows and 2 columns -->
+            <tr>
+              <td>Web Developement</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+
+            <tr>
+              <td>Machine learning</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+          <table cellspacing = "5">
+            <tr>
+              <td>Python</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+    <h3><a href="contact_details.html">Contact me</a></h3>
+
+
+  </body>
+</html>
